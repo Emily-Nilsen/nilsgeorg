@@ -5,7 +5,7 @@ const navigation = {
     { name: `Startside`, href: '/' },
     { name: `Nyheter`, href: '/nyheter' },
     { name: `Tjenester`, href: '/tjenester' },
-    { name: `Kontakt`, href: '/Kontakt' },
+    { name: `Kontakt`, href: '/kontakt' },
   ],
   social: [
     {
@@ -87,7 +87,7 @@ export default function Footer() {
             </form>
           </div>
           <nav
-            className="flex flex-wrap justify-between -mx-5 -my-2 sm:justify-end sm:col-start-2 sm:col-span-1 sm:row-span-1"
+            className="flex flex-wrap justify-between pt-8 -mx-5 -my-2 sm:justify-end sm:col-start-2 sm:col-span-1 sm:row-span-1 sm:pt-0"
             aria-label="Footer"
           >
             {navigation.main.map((item) => (

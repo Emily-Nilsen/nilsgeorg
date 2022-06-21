@@ -10,7 +10,7 @@ export default function NordicTenors() {
           <div className="absolute inset-0">
             <div className="relative object-cover object-center w-full h-full">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655699547/Nils%20Georg/general/nordic_tenors_dn98rn.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655789400/Nils%20Georg/general/nordic_tenors_singing_imoral.webp"
                 alt="Nordic Tenors"
                 layout="fill"
                 objectFit="cover"
@@ -19,7 +19,7 @@ export default function NordicTenors() {
               />
             </div>
           </div>
-          <div className="relative px-6 py-32 bg-opacity-70 bg-slate-900 sm:py-40 sm:px-12 lg:px-16">
+          <div className="relative px-6 py-32 bg-opacity-20 bg-gradient-to-t from-slate-800 sm:py-40 sm:px-12 lg:px-16">
             <div className="relative flex flex-col items-center max-w-3xl mx-auto text-center">
               <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 <span className="block sm:inline">Nordic</span>
