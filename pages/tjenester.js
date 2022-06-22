@@ -1,59 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-/* This example requires Tailwind CSS v2.0+ */
-import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  MailIcon,
-  ScaleIcon,
-} from '@heroicons/react/outline';
-
-const transferFeatures = [
-  {
-    id: 1,
-    name: 'Competitive exchange rates',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
-  },
-  {
-    id: 2,
-    name: 'No hidden fees',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
-  },
-  {
-    id: 3,
-    name: 'Transfers are instant',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
-  },
-];
-const communicationFeatures = [
-  {
-    id: 1,
-    name: 'Mobile notifications',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: AnnotationIcon,
-  },
-  {
-    id: 2,
-    name: 'Reminder emails',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: MailIcon,
-  },
-];
-
-export default function Example() {
+export default function Tjenester() {
   return (
     <section>
-      <header className="relative h-[33vh] bg-slate-800">
+      <header className="relative h-[40vh] bg-slate-800">
         <div className="absolute inset-0">
           <div
             whileInView={{ opacity: 1 }}
@@ -69,7 +20,7 @@ export default function Example() {
               alt="Oslo city at night"
               layout="fill"
               objectFit="cover"
-              objectPosition="top"
+              objectPosition="50% 30%"
               unoptimized={true}
               priority={true}
             />
@@ -89,55 +40,61 @@ export default function Example() {
         <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="relative">
             <h1 className="text-3xl font-extrabold leading-8 tracking-tight text-center text-slate-900 sm:text-4xl">
-              A better way to send money
+              Private eventer og sangtimer
             </h1>
             <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-slate-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in, accusamus quisquam.
+              Tenor Nils Georg Nilsen er tilgjengelig for booking for private
+              anledninger og private sangtimer.
             </p>
           </div>
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
               <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                Transfer funds world-wide
+                Tilgjengelig for booking
               </h1>
               <p className="mt-3 text-lg text-slate-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur minima sequi recusandae, porro maiores officia
-                assumenda aliquam laborum ab aliquid veritatis impedit odit
-                adipisci optio iste blanditiis facere. Totam, velit.
+                Klassisk opplært tenor Nils Georg Nilsen har turnert over hele
+                verden som solist. Nils Georg trollbinder sitt publikum med sin
+                fyldige tenorstemme og fremfører et omfattende repertoar. Han
+                har sunget for HM Kong Harald V, opptrådt på Operahuset, Opera
+                Tampa og med Minsk kammerorkester.
               </p>
-
-              <dl className="mt-10 space-y-10">
-                {transferFeatures.map((item) => (
-                  <div key={item.id} className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
-                        <item.icon className="w-6 h-6" aria-hidden="true" />
-                      </div>
-                      <p className="ml-16 text-lg font-medium leading-6 text-slate-900">
-                        {item.name}
-                      </p>
-                    </dt>
-                    <dd className="mt-2 ml-16 text-base text-slate-500">
-                      {item.description}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+              <div className="mt-6 prose prose-lg prose-blue text-slate-500">
+                <ul role="list">
+                  <li>Et elegant tillegg til enhver spesiell anledning.</li>
+                  <li>
+                    Nils Nilsen kan også tilby en pianist eller andre sangere og
+                    instrumenter.
+                  </li>
+                  <li>
+                    Den allsidige Nils Nilsen leverer en fantastisk opptreden
+                    hver gang, og kan tilby alt fra pop til opera.
+                  </li>
+                  <li>
+                    Enten du tenker på å bestille Nils til bryllup,
+                    bedriftsarrangement, fest eller begravelsestjeneste, ta
+                    kontakt.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
-              <div className="relative mx-auto">
-                <Image
-                  className="rounded-md"
-                  width={490}
-                  height={300}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655798574/Nils%20Georg/general/NG_sitting_zikdoj.webp"
-                  alt="Tenor Nils Georg Nilsen"
-                  unoptimized={true}
-                />
+              <div className="p-4 aspect-w-12 aspect-h-10 lg:aspect-none lg:pl-8 lg:p-0">
+                <div className="relative object-cover object-center rounded-lg shadow-lg">
+                  <Image
+                    className="rounded-lg"
+                    layout="responsive"
+                    objectFit="cover"
+                    objectPosition="center"
+                    width={360}
+                    height={300}
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655798574/Nils%20Georg/general/NG_sitting_zikdoj.webp"
+                    alt="Tenor Nils Georg Nilsen"
+                    unoptimized={true}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -146,43 +103,42 @@ export default function Example() {
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
                 <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                  Always in the loop
+                  Tilgjengelig for sangtimer
                 </h1>
                 <p className="mt-3 text-lg text-slate-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit ex obcaecati natus eligendi delectus, cum deleniti
-                  sunt in labore nihil quod quibusdam expedita nemo.
+                  Nils Nilsen er sangprofessor ved det prestisjetunge Galamian
+                  Academy for klassisk musikk i Málaga, Spania.
                 </p>
 
-                <dl className="mt-10 space-y-10">
-                  {communicationFeatures.map((item) => (
-                    <div key={item.id} className="relative">
-                      <dt>
-                        <div className="absolute flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
-                          <item.icon className="w-6 h-6" aria-hidden="true" />
-                        </div>
-                        <p className="ml-16 text-lg font-medium leading-6 text-slate-900">
-                          {item.name}
-                        </p>
-                      </dt>
-                      <dd className="mt-2 ml-16 text-base text-slate-500">
-                        {item.description}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
+                <div className="mt-6 prose prose-lg prose-blue text-slate-500">
+                  <ul role="list">
+                    <li>
+                      Nils Georg er også tilgjengelig for private sangtimer i
+                      Oslo.
+                    </li>
+                    <li>
+                      Motta profesjonell instruksjon i lyrisk fremføring og
+                      kropps- og oppvarmingsteknikker.
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
-                <div className="relative mx-auto">
-                  <Image
-                    className="rounded-md"
-                    width={490}
-                    height={300}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-05_acbsra.webp"
-                    alt="Tenor Nils Georg Nilsen"
-                    unoptimized={true}
-                  />
+                <div className="p-4 lg:pr-8 lg:p-0 aspect-w-12 aspect-h-10 lg:aspect-none">
+                  <div className="relative object-cover object-center rounded-lg shadow-lg">
+                    <Image
+                      className="rounded-lg"
+                      layout="responsive"
+                      objectFit="cover"
+                      objectPosition="center"
+                      width={360}
+                      height={300}
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-05_acbsra.webp"
+                      alt="Tenor Nils Georg Nilsen"
+                      unoptimized={true}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

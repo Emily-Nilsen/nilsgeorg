@@ -6,7 +6,7 @@ export default function NilsGeorg() {
     <div className="pt-10 bg-slate-800">
       {/* Tenor Nils Nilsen */}
       <div className="w-screen bg-slate-50">
-        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-slate-800 lg:h-[52vh] w-[100vw] h-[38vh] sm:h-[40vh]">
+        <div className="relative mx-auto overflow-x-hidden overflow-hidden rounded-none bg-slate-800 lg:h-[70vh] w-[100vw] h-[38vh] sm:h-[40vh]">
           <div></div>
           <motion.div className="absolute flex items-center justify-end w-2/3 h-full text-white rounded-none bg-slate-800">
             <div className="flex w-[88%] bg-slate-800 h-5/6">

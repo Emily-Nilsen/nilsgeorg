@@ -32,7 +32,7 @@ export default function Home() {
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
-              objectPosition="top"
+              objectPosition="50% 30%"
               unoptimized={true}
               priority={true}
             />

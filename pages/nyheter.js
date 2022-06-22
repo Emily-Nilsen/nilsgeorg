@@ -61,7 +61,7 @@ const positions = [
 export default function Nyheter() {
   return (
     <section>
-      <header className="relative h-[33vh] bg-slate-800">
+      <header className="relative h-[40vh] bg-slate-800">
         <div className="absolute inset-0">
           <div
             whileInView={{ opacity: 1 }}
@@ -77,7 +77,7 @@ export default function Nyheter() {
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
-              objectPosition="top"
+              objectPosition="50% 30%"
               unoptimized={true}
               priority={true}
             />
