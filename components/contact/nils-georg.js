@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function NilsGeorg() {
+  const { t } = useTranslation();
+
   return (
     <div className="pt-10 bg-slate-800">
       {/* Tenor Nils Nilsen */}
@@ -23,7 +26,7 @@ export default function NilsGeorg() {
                     }}
                     className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl"
                   >
-                    Kontakt
+                    {t('contact:kontakt')}
                   </motion.h2>
                   <motion.h1
                     animate={{ opacity: 1 }}
