@@ -27,8 +27,8 @@ export default function Tjenester() {
           </div>
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-center pb-[12vh]">
-          <div className="flex  lg:pb-0 pb-[12vh]">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="flex pb-[12vh]">
             <h2 className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl">
               Tjenester
             </h2>
