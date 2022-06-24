@@ -28,19 +28,19 @@ export default function Home() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655456097/Nils%20Georg/general/hero_gak7b3.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655870844/Nils%20Georg/general/Nils_Georg_Nilsen_-_headshot_black_and_white_xnnggs.jpg"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
-              objectPosition="50% 30%"
+              objectPosition="top"
               unoptimized={true}
               priority={true}
             />
           </motion.div>
         </div>
 
-        <div className="absolute inset-0 flex items-end p-6 sm:p-20 lg:items-center">
-          <div className="flex flex-col lg:pb-0 pb-[12vh]">
+        <div className="absolute inset-0 flex items-center p-6 sm:p-20 lg:items-center">
+          <div className="flex flex-col pb-0">
             <h2 className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl">
               Tenor
             </h2>

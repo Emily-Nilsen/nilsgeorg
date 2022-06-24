@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Tjenester() {
+  const { t } = useTranslation();
+
   return (
     <section>
       <header className="relative h-[40vh] bg-slate-800">
@@ -30,7 +33,7 @@ export default function Tjenester() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="flex pb-[12vh]">
             <h2 className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl">
-              Tjenester
+              {t('services:tjenester')}
             </h2>
           </div>
         </div>
@@ -40,42 +43,27 @@ export default function Tjenester() {
         <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="relative">
             <h1 className="text-3xl font-extrabold leading-8 tracking-tight text-center text-slate-900 sm:text-4xl">
-              Private eventer og sangtimer
+              {t('services:title')}
             </h1>
             <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-slate-500">
-              Tenor Nils Georg Nilsen er tilgjengelig for booking for private
-              anledninger og private sangtimer.
+              {t('services:subtitle')}
             </p>
           </div>
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
               <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                Tilgjengelig for booking
+                {t('services:title_booking')}
               </h1>
               <p className="mt-3 text-lg text-slate-500">
-                Klassisk opplært tenor Nils Georg Nilsen har turnert over hele
-                verden som solist. Nils Georg trollbinder sitt publikum med sin
-                fyldige tenorstemme og fremfører et omfattende repertoar. Han
-                har sunget for HM Kong Harald V, opptrådt på Operahuset, Opera
-                Tampa og med Minsk kammerorkester.
+                {t('services:text_booking')}
               </p>
               <div className="mt-6 prose prose-lg prose-blue text-slate-500">
                 <ul role="list">
-                  <li>Et elegant tillegg til enhver spesiell anledning.</li>
-                  <li>
-                    Nils Nilsen kan også tilby en pianist eller andre sangere og
-                    instrumenter.
-                  </li>
-                  <li>
-                    Den allsidige Nils Nilsen leverer en fantastisk opptreden
-                    hver gang, og kan tilby alt fra pop til opera.
-                  </li>
-                  <li>
-                    Enten du tenker på å bestille Nils til bryllup,
-                    bedriftsarrangement, fest eller begravelsestjeneste, ta
-                    kontakt.
-                  </li>
+                  <li>{t('services:item_1_booking')}</li>
+                  <li>{t('services:item_2_booking')}</li>
+                  <li>{t('services:item_3_booking')}</li>
+                  <li>{t('services:item_4_booking')}</li>
                 </ul>
               </div>
             </div>
@@ -103,23 +91,16 @@ export default function Tjenester() {
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
                 <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                  Tilgjengelig for sangtimer
+                  {t('services:title_sangtimer')}
                 </h1>
                 <p className="mt-3 text-lg text-slate-500">
-                  Nils Nilsen er sangprofessor ved det prestisjetunge Galamian
-                  Academy for klassisk musikk i Málaga, Spania.
+                  {t('services:text_sangtimer')}
                 </p>
 
                 <div className="mt-6 prose prose-lg prose-blue text-slate-500">
                   <ul role="list">
-                    <li>
-                      Nils Georg er også tilgjengelig for private sangtimer i
-                      Oslo.
-                    </li>
-                    <li>
-                      Motta profesjonell instruksjon i lyrisk fremføring og
-                      kropps- og oppvarmingsteknikker.
-                    </li>
+                    <li>{t('services:item_1_sangtimer')}</li>
+                    <li>{t('services:item_2_sangtimer')}</li>
                   </ul>
                 </div>
               </div>
