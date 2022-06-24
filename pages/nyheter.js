@@ -1,11 +1,14 @@
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import dayjs from 'dayjs';
 import { LinkIcon, MailIcon, CalendarIcon } from '@heroicons/react/solid';
 import useTranslation from 'next-translate/useTranslation';
+import Pagination from '../components/news/pagination';
 
 export default function Nyheter() {
   const { t } = useTranslation();
+
   const currentDatestamp = Date.now();
 
   const events = [
@@ -13,7 +16,7 @@ export default function Nyheter() {
       title: `Test`,
       location: `Test`,
       date: '2022-06-22',
-      expiryDate: `${new Date('2022-06-25').getTime()}`,
+      expiryDate: `${new Date('2022-06-24').getTime()}`,
       dateFull: `${t('news:friday')}, ${t('news:el')}24${t('news:of')} ${t(
         'news:june'
       )}, 2022`,
@@ -111,6 +114,18 @@ export default function Nyheter() {
     },
   ];
 
+  const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(3);
+
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <section>
       <header className="relative h-[40vh] bg-slate-800">
@@ -159,9 +174,12 @@ export default function Nyheter() {
         </div>
       </div>
       {/* List of events */}
-      <div className="max-w-3xl mx-auto mb-16 overflow-hidden bg-white shadow sm:rounded-md sm:mb-24">
+      <div
+        id="events"
+        className="max-w-3xl mx-auto mb-16 overflow-hidden bg-white shadow sm:rounded-md sm:mb-24"
+      >
         <ul role="list" className="divide-y divide-slate-200">
-          {events.map((event, i) => (
+          {currentPosts.map((event, i) => (
             <li key={i}>
               {currentDatestamp > event.expiryDate ? null : (
                 <a href={event.link} className="block hover:bg-blue-500 group">
@@ -214,6 +232,12 @@ export default function Nyheter() {
             </li>
           ))}
         </ul>
+        {/* Pagination */}
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={events.length}
+          paginate={paginate}
+        />
       </div>
     </section>
   );
