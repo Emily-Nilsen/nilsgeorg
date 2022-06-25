@@ -13,17 +13,6 @@ export default function Nyheter() {
 
   const events = [
     {
-      title: `Test`,
-      location: `Test`,
-      date: '2022-06-22',
-      expiryDate: `${new Date('2022-06-24').getTime()}`,
-      dateFull: `${t('news:friday')}, ${t('news:el')}24${t('news:of')} ${t(
-        'news:june'
-      )}, 2022`,
-      artists: `Nils Georg Nilsen ${t('news:and')} Susanne Hvinden Hals`,
-      link: `https://www.musikkislemmestad.no/konsert-2-juli-musikal-operette-og-operaperler`,
-    },
-    {
       title: `Musikal, Operette- og Opera-Perler`,
       location: `Café Plenum, Slemmestad`,
       date: '2022-07-09',
@@ -112,19 +101,363 @@ export default function Nyheter() {
       )} Jan-Tore Saltnes`,
       link: `https://www.ticketmaster.no/event/685855?language=no-no&track=DiscoveryAPI&subchannel_id=1&brand=ullensakerkulturhus&_ga=2.109271811.703174804.1645691954-329025345.1622720366&utm_medium=social&utm_source=nordictenors.no&utm_campaign=ullensaker+cwnt+2024`,
     },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Askim Kulturhus`,
+      date: '2022-11-26',
+      expiryDate: `${new Date('2022-11-27').getTime()}`,
+      dateFull: `${t('news:saturday')}, ${t('news:el')}26${t('news:of')} ${t(
+        'news:november'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://tix.no/nb/askim/buyingflow/tickets/15881/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=askim+cwnt+2025`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Ringerike Kulturhsenter, Hønefoss`,
+      date: '2022-11-27',
+      expiryDate: `${new Date('2022-11-28').getTime()}`,
+      dateFull: `${t('news:sunday')}, ${t('news:el')}27${t('news:of')} ${t(
+        'news:november'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.ringbillett.no/ai.aspx?id=2041&utm_medium=social&utm_source=nordictenors.no&utm_campaign=h%C3%B8nefoss+cwnt+2026`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Oslo Konserthus`,
+      date: '2022-11-28',
+      expiryDate: `${new Date('2022-11-29').getTime()}`,
+      dateFull: `${t('news:monday')}, ${t('news:el')}28${t('news:of')} ${t(
+        'news:november'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://tix.no/nb/oslok/buyingflow/tickets/15922/33276/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=oslo+cwnt+2027`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Blå Grotte, Fredrikstad`,
+      date: '2022-11-29',
+      expiryDate: `${new Date('2022-11-30').getTime()}`,
+      dateFull: `${t('news:tuesday')}, ${t('news:el')}29${t('news:of')} ${t(
+        'news:november'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://checkout.ebillett.no/178/events/113784/purchase/setup?utm_source=nordictenors.no&utm_campaign=fredrikstad%20cwnt%202028&utm_medium=social`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Ibsenhuset, Skien`,
+      date: '2022-12-1',
+      expiryDate: `${new Date('2022-12-2').getTime()}`,
+      dateFull: `${t('news:thursday')}, ${t('news:el')}1${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.ibsenhuset.no/program/christmas-with-nordic-tenors/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=skien+cwnt+2029`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Moss Kulturhus`,
+      date: '2022-12-2',
+      expiryDate: `${new Date('2022-12-3').getTime()}`,
+      dateFull: `${t('news:friday')}, ${t('news:el')}2${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.mosskulturhus.no/event/christmas-with-nordic-tenors/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=moss+cwnt+2030`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Nøtterøy Kulturhus`,
+      date: '2022-12-3',
+      expiryDate: `${new Date('2022-12-4').getTime()}`,
+      dateFull: `${t('news:saturday')}, ${t('news:el')}3${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://notteroy.kulturhus.no/program/christmas-with-nordic-tenors/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=notteroy+cwnt+2031`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Hjertnes Kulturhus, Sandefjord`,
+      date: '2022-12-4',
+      expiryDate: `${new Date('2022-12-5').getTime()}`,
+      dateFull: `${t('news:sunday')}, ${t('news:el')}4${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://checkout.ebillett.no/262/events/103427/purchase/setup?utm_medium=social&utm_source=nordictenors.no&utm_campaign=sandefjord+cwnt+2032`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Arendal Kulturhus`,
+      date: '2022-12-5',
+      expiryDate: `${new Date('2022-12-6').getTime()}`,
+      dateFull: `${t('news:monday')}, ${t('news:el')}5${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://tix.no/nb/arendal/buyingflow/tickets/15894/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=arendal+cwnt+2033`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Kilden, Kristiansand`,
+      date: '2022-12-6',
+      expiryDate: `${new Date('2022-12-7').getTime()}`,
+      dateFull: `${t('news:tuesday')}, ${t('news:el')}6${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://kilden.com/forestilling/christmas-with-nordic-tenors-3/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=kristiansand+cwnt+2034`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Olavshallen, Trondheim`,
+      date: '2022-12-7',
+      expiryDate: `${new Date('2022-12-8').getTime()}`,
+      dateFull: `${t('news:wednesday')}, ${t('news:el')}7${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.olavshallen.no/forestillinger/2022-03-10-christmas-with-nordic-tenors?utm_medium=social&utm_source=nordictenors.no&utm_campaign=trondheim+cwnt+2022`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Kimen Kulturhus, Stjørdal`,
+      date: '2022-12-8',
+      expiryDate: `${new Date('2022-12-9').getTime()}`,
+      dateFull: `${t('news:thursday')}, ${t('news:el')}8${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://kimenkulturhus.no/Program/?Activities=400&utm_medium=social&utm_source=nordictenors.no&utm_campaign=stjoradl+cwnt+2036`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Bølgen, Larvik`,
+      date: '2022-12-9',
+      expiryDate: `${new Date('2022-12-10').getTime()}`,
+      dateFull: `${t('news:friday')}, ${t('news:el')}9${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.bolgenkulturhus.no/event/christmas-with-nordic-tenors-2022/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=larvik+cwnt+2037`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Rådhus-Teatret, Kongsvinger`,
+      date: '2022-12-10',
+      expiryDate: `${new Date('2022-12-11').getTime()}`,
+      dateFull: `${t('news:saturday')}, ${t('news:el')}10${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://checkout.ebillett.no/206/events/24394/purchase/setup?kanal=fw&utm_medium=social&utm_source=nordictenors.no&utm_campaign=kongsvinger+cwnt+2038`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Maihaugsalen, Lillehammer`,
+      date: '2022-12-11',
+      expiryDate: `${new Date('2022-12-12').getTime()}`,
+      dateFull: `${t('news:sunday')}, ${t('news:el')}11${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.ticketmaster.no/event/685891?utm_medium=social&utm_source=nordictenors.no&utm_campaign=lillehammer+cwnt+2039`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Lilleststrøm Kultursenter`,
+      date: '2022-12-12',
+      expiryDate: `${new Date('2022-12-13').getTime()}`,
+      dateFull: `${t('news:monday')}, ${t('news:el')}12${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.lillestrom-kultursenter.no/event/christmas-with-nordic-tenors/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=lillestrom+cwnt+2040`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Bjørnsonhuset, Molde`,
+      date: '2022-12-13',
+      expiryDate: `${new Date('2022-12-14').getTime()}`,
+      dateFull: `${t('news:tuesday')}, ${t('news:el')}13${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.eventim.no/event/christmas-with-nordic-tenors-molde-bjoernsonhuset-15034915/?utm_campaign=molde%20cwnt%202041&utm_medium=social&utm_source=nordictenors.no`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Parken Kulturhus, Ålesund`,
+      date: '2022-12-14',
+      expiryDate: `${new Date('2022-12-15').getTime()}`,
+      dateFull: `${t('news:wednesday')}, ${t('news:el')}14${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://checkout.ebillett.no/217/events/54539/purchase/setup?utm_medium=social&utm_source=nordictenors.no&utm_campaign=alesund+cwnt+2042`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Festiviteten, Haugesund`,
+      date: '2022-12-15',
+      expiryDate: `${new Date('2022-12-16').getTime()}`,
+      dateFull: `${t('news:thursday')}, ${t('news:el')}15${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://festiviteten.no/alle/christmas-with-nordic-tenors-3/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=haugesund+cwnt+2043`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Varen Kulturscene, Randaberg`,
+      date: '2022-12-16',
+      expiryDate: `${new Date('2022-12-17').getTime()}`,
+      dateFull: `${t('news:friday')}, ${t('news:el')}16${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.linticket.no/page/no/69/1/330?utm_medium=social&utm_source=nordictenors.no&utm_campaign=randaberg%20cwnt%202044`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Sandnes Kulturhus`,
+      date: '2022-12-17',
+      expiryDate: `${new Date('2022-12-18').getTime()}`,
+      dateFull: `${t('news:saturday')}, ${t('news:el')}17${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://tix.no/nb/sandnes/buyingflow/tickets/15916/33269/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=sandnes+cwnt+2045#tixsp`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Stavanger Konserthus`,
+      date: '2022-12-18',
+      expiryDate: `${new Date('2022-12-19').getTime()}`,
+      dateFull: `${t('news:sunday')}, ${t('news:el')}18${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.stavanger-konserthus.no/event/christmas-with-nordic-tenors/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=stavanger+cwnt+2046`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Grieghallen, Bergen`,
+      date: '2022-12-19',
+      expiryDate: `${new Date('2022-12-20').getTime()}`,
+      dateFull: `${t('news:monday')}, ${t('news:el')}19${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.ticketmaster.no/event/686853?utm_medium=social&utm_source=nordictenors.no&utm_campaign=bergen+cwnt+2047`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Stormen, Bodø`,
+      date: '2022-12-20',
+      expiryDate: `${new Date('2022-12-21').getTime()}`,
+      dateFull: `${t('news:tuesday')}, ${t('news:el')}20${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://checkout.ebillett.no/144/events/35442/purchase/setup?utm_medium=social&utm_source=nordictenors.no&utm_campaign=bod%C3%B8+cwnt+2048`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Kulturhuset i Tromsø`,
+      date: '2022-12-21',
+      expiryDate: `${new Date('2022-12-22').getTime()}`,
+      dateFull: `${t('news:wednesday')}, ${t('news:el')}21${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://tix.no/nb/tr/buyingflow/tickets/15871/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=tromso+cwnt+2049`,
+    },
+    {
+      title: `Christmas with Nordic Tenors`,
+      location: `Drammens Teater`,
+      date: '2022-12-22',
+      expiryDate: `${new Date('2022-12-23').getTime()}`,
+      dateFull: `${t('news:thursday')}, ${t('news:el')}22${t('news:of')} ${t(
+        'news:december'
+      )}, 2022`,
+      artists: `Roald Haarr, Nils Georg Nilsen ${t(
+        'news:and'
+      )} Jan-Tore Saltnes`,
+      link: `https://www.drammenscener.no/teatret/program/15932-christmas-with-nordic-tenors/?utm_medium=social&utm_source=nordictenors.no&utm_campaign=drammen+cwnt+2050`,
+    },
   ];
 
-  const [posts, setPosts] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(3);
+  // For pagination
+  // const [posts, setPosts] = useState([]);
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [postsPerPage] = useState(10);
 
   // Get current posts
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost);
+  // const indexOfLastPost = currentPage * postsPerPage;
+  // const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  // const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  // Remove event
+  // const remove = events.map((event) => (
+  //   ;
+  // ))
 
   return (
     <section>
@@ -174,12 +507,9 @@ export default function Nyheter() {
         </div>
       </div>
       {/* List of events */}
-      <div
-        id="events"
-        className="max-w-3xl mx-auto mb-16 overflow-hidden bg-white shadow sm:rounded-md sm:mb-24"
-      >
-        <ul role="list" className="divide-y divide-slate-200">
-          {currentPosts.map((event, i) => (
+      <div className="max-w-3xl mx-auto mb-16 overflow-hidden bg-white shadow sm:rounded-md sm:mb-24 lg:mb-32">
+        <ul id="events" role="list" className="divide-y divide-slate-200">
+          {events.map((event, i) => (
             <li key={i}>
               {currentDatestamp > event.expiryDate ? null : (
                 <a href={event.link} className="block hover:bg-blue-500 group">
@@ -233,11 +563,11 @@ export default function Nyheter() {
           ))}
         </ul>
         {/* Pagination */}
-        <Pagination
+        {/* <Pagination
           postsPerPage={postsPerPage}
           totalPosts={events.length}
           paginate={paginate}
-        />
+        /> */}
       </div>
     </section>
   );
