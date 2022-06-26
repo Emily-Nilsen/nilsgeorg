@@ -46,13 +46,13 @@ export default function Bio() {
                     />
                   </motion.div>
                 </div>
-                {/* <figcaption className="flex mt-3 text-sm text-slate-600">
+                <figcaption className="flex mt-3 text-sm text-slate-600">
                   <CameraIcon
                     className="flex-none w-5 h-5 text-slate-500"
                     aria-hidden="true"
                   />
-                  <span className="ml-2">Photograph by Marcus O’Leary</span>
-                </figcaption> */}
+                  <span className="ml-2">{t('home:photo_by')}</span>
+                </figcaption>
               </figure>
             </div>
           </div>

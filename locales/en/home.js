@@ -3,7 +3,7 @@ const home = {
   features_title: `Links to news, services and contact details`,
   features_text: `Find a list of Nils Georg's latest upcoming events, including concerts and festivals, the services he provides and his contact page.`,
 
-  photo_by: `Photograph by ?`,
+  photo_by: `Photograph by Ingrid Halvorsen`,
 
   // Bio
   sent_1: `Tenor Nils Georg Nilsen made his debut at the Lincoln Center in New York after completing a Master’s degree at the Manhattan School of Music in 2012.`,

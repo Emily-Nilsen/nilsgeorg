@@ -3,7 +3,7 @@ const home = {
   features_title: `Enlaces a noticias, servicios y datos de contacto`,
   features_text: `Encuentre una lista de los próximos eventos más recientes de Nils Georg, incluidos conciertos y festivales, los servicios que brinda y su página de contacto.`,
 
-  photo_by: `Foto de ?`,
+  photo_by: `Foto de Ingrid Halvorsen`,
 
   // Bio
   sent_1: `Debutó en 2012 en el Avery Fisher Hall de Nueva York y ha actuado con las compañías "Opera Tampa" y "Norwegian Opera" y con la orquesta de Cámara de Minsk.`,
