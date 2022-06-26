@@ -58,7 +58,9 @@ export default function Bio() {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base max-w-prose lg:max-w-none">
-              <p className="text-lg text-slate-600">{t('home:sent_1')}</p>
+              <p className="text-base sm:text-lg text-slate-600">
+                {t('home:sent_1')}
+              </p>
             </div>
             <div className="mx-auto mt-5 prose prose-blue text-slate-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>{t('home:sent_2')}</p>
