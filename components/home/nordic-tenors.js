@@ -1,12 +1,24 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import useTranslation from 'next-translate/useTranslation';
 
-/* This example requires Tailwind CSS v2.0+ */
 export default function NordicTenors() {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white">
       <div className="px-4 pb-0 mx-auto max-w-7xl sm:pb-0 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-lg">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: '10vh' }}
+          transition={{
+            delay: 0.5,
+            duration: 0.8,
+            type: 'fade',
+          }}
+          className="relative overflow-hidden rounded-lg"
+        >
           <div className="absolute inset-0">
             <div className="relative object-cover object-center w-full h-full">
               <Image
@@ -21,15 +33,12 @@ export default function NordicTenors() {
           </div>
           <div className="relative px-6 py-32 bg-opacity-20 bg-gradient-to-t from-slate-800 sm:py-40 sm:px-12 lg:px-16">
             <div className="relative flex flex-col items-center max-w-3xl mx-auto text-center">
-              <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                <span className="block sm:inline">Nordic</span>
-                <span className="block sm:inline"> Tenors</span>
+              <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl lg:text-4xl">
+                <span className="inline">Nordic</span>
+                <span className="inline"> Tenors</span>
               </h1>
-              <p className="mt-3 text-xl text-white">
-                The Nordic Tenors are a musical group combining elegant artistic
-                quality with a wide range of genres, humour and musical wonders.
-                Nils Georg joined Nordic Tenors in 2021, together with tenors
-                Jan-Tore Saltnes and Roald Haarr.
+              <p className="mt-3 text-base text-white sm:text-lg lg:text-xl">
+                {t('home:nordic_tenors_text')}
               </p>
               <Link
                 href="https://www.nordictenors.no/"
@@ -42,7 +51,7 @@ export default function NordicTenors() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

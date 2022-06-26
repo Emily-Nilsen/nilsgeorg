@@ -2,16 +2,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CameraIcon } from '@heroicons/react/solid';
 import Rehearsal from './rehearsal';
+import { motion } from 'framer-motion';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Bio() {
+  const { t } = useTranslation();
+
   return (
     <div className="overflow-hidden bg-white">
       <div className="relative px-4 pb-16 mx-auto sm:pb-24 lg:pb-32 max-w-7xl sm:px-6 lg:px-8">
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="text-base font-semibold tracking-wide text-blue-600 uppercase">
-              {/* Case Study */}
-            </h2>
             <h1 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-slate-900 sm:text-4xl">
               Nils Georg
             </h1>
@@ -22,7 +23,16 @@ export default function Bio() {
             <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-10 lg:aspect-none">
-                  <div className="object-cover object-center rounded-lg shadow-lg">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      delay: 0.5,
+                      duration: 0.8,
+                      type: 'fade',
+                    }}
+                    className="object-cover object-center rounded-lg shadow-lg"
+                  >
                     <Image
                       className="rounded-lg"
                       src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655664737/Nils%20Georg/general/about-profile-img_z38xiz.jpg"
@@ -34,77 +44,45 @@ export default function Bio() {
                       objectFit="cover"
                       objectPosition="center"
                     />
-                  </div>
+                  </motion.div>
                 </div>
-                <figcaption className="flex mt-3 text-sm text-slate-600">
+                {/* <figcaption className="flex mt-3 text-sm text-slate-600">
                   <CameraIcon
                     className="flex-none w-5 h-5 text-slate-500"
                     aria-hidden="true"
                   />
                   <span className="ml-2">Photograph by Marcus O’Leary</span>
-                </figcaption>
+                </figcaption> */}
               </figure>
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base max-w-prose lg:max-w-none">
-              <p className="text-lg text-slate-600">
-                Tenor Nils Georg Nilsen made his debut at the Lincoln Center in
-                New York after completing a Master’s degree at the Manhattan
-                School of Music in 2012.
-              </p>
+              <p className="text-lg text-slate-600">{t('home:sent_1')}</p>
             </div>
             <div className="mx-auto mt-5 prose prose-blue text-slate-600 lg:max-w-none lg:row-start-1 lg:col-start-1">
-              <p>
-                He has recently been a soloist with the Chicago Symphony
-                Orchestra, sung with the Israeli Opera, and performed at various
-                festivals and concerts both in Norway and abroad, including
-                Málaga Clásica.
-              </p>
-              <p>
-                Nils Georg maintains a high level in several genres and is
-                available for hire at weddings, funerals and events.
-              </p>
+              <p>{t('home:sent_2')}</p>
+              <p>{t('home:sent_3')}</p>
               <p>
                 {' '}
-                He is also a singing professor at the{' '}
+                {t('home:sent_4_start')}{' '}
                 <Link
-                  href="https://www.academiagalamian.com/"
+                  href="https://www.academiagalamian.com/en/estudios/voz"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <a className="font-normal text-blue-500 no-underline duration-300 ease-in-out hover:text-blue-600 tranisition">
-                    Galamian Academy of Classical Music
+                    {t('home:galamian_link')}
                   </a>
                 </Link>{' '}
-                in Málaga, Spain.
+                {t('home:sent_4_end')}
               </p>
-              {/* <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-                </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-              </ul> */}
+
               <Rehearsal />
-              <h4 className="text-xl">Extensive operatic repertoire</h4>
-              <p>
-                Nils Georg’s experiences within opera span from his roles as
-                Elvino (La Sunnambula), Tito (La Clamenza de Tito), Aumônier
-                (Dialogues of the Carmelites), Rinucco (Gianni Schicci), Tinca
-                (Il Tabarro), Tom Rakewell (The Rake’s Progress), Torquemada
-                (L’heure Espagnole).
-              </p>
-              <p>
-                Nils has sung as an oratorio soloist in Carmina Burana, Messa di
-                Gloria (Puccini), Händel’s Messiah, Mozart’s Requiem, Christus
-                Mendelssohn and Bach’s Christmas oratorio.
-              </p>
-              <p>
-                Additionally, Nils has sung as a tenor soloist with the dance
-                company Dances Patrelle, performing in New York (Gilbert and
-                Sullivan Ballet) three years in a row.
-              </p>
+              <h4 className="text-xl">{t('home:extensive_title')}</h4>
+              <p>{t('home:sent_5')}</p>
+              <p>{t('home:sent_6')}</p>
+              <p>{t('home:sent_7')}</p>
             </div>
           </div>
         </div>

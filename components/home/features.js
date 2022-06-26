@@ -1,75 +1,64 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
-/* This example requires Tailwind CSS v2.0+ */
-import {
-  CloudUploadIcon,
-  CogIcon,
-  LockClosedIcon,
-  RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
-} from '@heroicons/react/outline';
-
-const features = [
-  {
-    name: `Nyheter`,
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: CloudUploadIcon,
-  },
-  {
-    name: `Tjenester`,
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: `Kontakt`,
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: RefreshIcon,
-  },
-];
+import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function Features() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name: `${t('common:nyheter')}`,
+      url: '/nyheter',
+    },
+    {
+      name: `${t('common:tjenester')}`,
+      url: '/tjenester',
+    },
+    {
+      name: `${t('common:kontakt')}`,
+      url: '/kontakt',
+    },
+  ];
+
   return (
     <div className="relative py-16 bg-white sm:py-24 lg:py-32">
       <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-base font-semibold tracking-wider text-blue-600 uppercase">
-          {/* Deploy faster */}
-        </h2>
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-          Links to news, services and contact details
+          {t('home:features_title')}
         </h1>
         <p className="mx-auto mt-5 text-xl font-light text-slate-500 max-w-prose">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in.
-          Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-          condimentum id viverra nulla.
+          {t('home:features_text')}
         </p>
         <div className="mt-12">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.name} className="pt-6">
-                <div className="flow-root px-6 pb-8 rounded-lg bg-slate-50">
-                  <div className="-mt-6">
-                    <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                        <feature.icon
-                          className="w-6 h-6 text-white"
-                          aria-hidden="true"
-                        />
-                      </span>
+          <div className="grid max-w-2xl grid-cols-1 gap-2 mx-auto sm:gap-8 sm:grid-cols-3">
+            {features.map((feature, i) => (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: '10vh',
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  initialDelay: 0.3,
+                  duration: 0.7,
+                  delay: i * 0.3,
+                  ease: 'easeOut',
+                }}
+                key={i}
+                className="pt-6"
+              >
+                <Link href={feature.url} passHref>
+                  <div className="flow-root px-6 py-5 duration-300 ease-in-out rounded-lg cursor-pointer bg-slate-100 hover:bg-blue-500 hover:text-white tranistion group">
+                    <div className="flex items-center justify-center">
+                      <h4 className="text-xl font-medium tracking-tight transition duration-300 ease-in-out text-slate-800 group-hover:text-white">
+                        {feature.name}
+                      </h4>
                     </div>
-                    <h4 className="mt-8 text-xl font-medium tracking-tight text-slate-900">
-                      {feature.name}
-                    </h4>
-                    <p className="mt-5 text-base font-normal text-slate-500">
-                      {feature.description}
-                    </p>
                   </div>
-                </div>
-              </div>
+                </Link>
+              </motion.div>
             ))}
           </div>
         </div>

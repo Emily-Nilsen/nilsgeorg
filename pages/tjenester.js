@@ -1,15 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function Tjenester() {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <Layout
+      title={t('layout:tjenester_title')}
+      description={t('layout:tjenester_description')}
+      keywords={t('layout:tjenester_keywords')}
+    >
       <header className="relative h-[40vh] bg-slate-800">
         <div className="absolute inset-0">
-          <div
+          <motion.div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{
@@ -27,7 +33,7 @@ export default function Tjenester() {
               unoptimized={true}
               priority={true}
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className="absolute inset-0 flex items-center justify-center">
@@ -70,7 +76,16 @@ export default function Tjenester() {
 
             <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
               <div className="p-4 aspect-w-12 aspect-h-10 lg:aspect-none lg:pl-8 lg:p-0">
-                <div className="relative object-cover object-center rounded-lg shadow-lg">
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.8,
+                    type: 'fade',
+                  }}
+                  className="relative object-cover object-center rounded-lg shadow-lg"
+                >
                   <Image
                     className="rounded-lg"
                     layout="responsive"
@@ -82,7 +97,7 @@ export default function Tjenester() {
                     alt="Tenor Nils Georg Nilsen"
                     unoptimized={true}
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -107,7 +122,16 @@ export default function Tjenester() {
 
               <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
                 <div className="p-4 lg:pr-8 lg:p-0 aspect-w-12 aspect-h-10 lg:aspect-none">
-                  <div className="relative object-cover object-center rounded-lg shadow-lg">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      delay: 0.5,
+                      duration: 0.8,
+                      type: 'fade',
+                    }}
+                    className="relative object-cover object-center rounded-lg shadow-lg"
+                  >
                     <Image
                       className="rounded-lg"
                       layout="responsive"
@@ -119,13 +143,13 @@ export default function Tjenester() {
                       alt="Tenor Nils Georg Nilsen"
                       unoptimized={true}
                     />
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 }

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import Layout from '../components/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import dayjs from 'dayjs';
 import { LinkIcon, MailIcon, CalendarIcon } from '@heroicons/react/solid';
 import useTranslation from 'next-translate/useTranslation';
 import Pagination from '../components/news/pagination';
+import { motion } from 'framer-motion';
 
 export default function Nyheter() {
   const { t } = useTranslation();
@@ -460,10 +462,14 @@ export default function Nyheter() {
   // ))
 
   return (
-    <section>
+    <Layout
+      title={t('layout:nyheter_title')}
+      description={t('layout:nyheter_description')}
+      keywords={t('layout:nyheter_keywords')}
+    >
       <header className="relative h-[40vh] bg-slate-800">
         <div className="absolute inset-0">
-          <div
+          <motion.div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{
@@ -481,7 +487,7 @@ export default function Nyheter() {
               unoptimized={true}
               priority={true}
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className="absolute inset-0 flex items-end p-6 sm:p-20 lg:items-center">
@@ -569,6 +575,6 @@ export default function Nyheter() {
           paginate={paginate}
         /> */}
       </div>
-    </section>
+    </Layout>
   );
 }

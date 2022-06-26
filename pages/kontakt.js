@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import NilsGeorg from '../components/contact/nils-georg';
@@ -8,7 +9,11 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <Layout
+      title={t('layout:kontakt_title')}
+      description={t('layout:kontakt_description')}
+      keywords={t('layout:kontakt_keywords')}
+    >
       <NilsGeorg />
       <div className="relative bg-white">
         <div className="absolute inset-0">
@@ -153,6 +158,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 }
