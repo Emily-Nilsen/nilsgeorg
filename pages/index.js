@@ -33,11 +33,11 @@ export default function Home() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655664737/Nils%20Georg/general/about-profile-img_z38xiz.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656327642/Nils%20Georg/general/NG_smiling_compressed_zgrgkh.jpg"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
-              objectPosition="30% 50%"
+              objectPosition="0% 50%"
               unoptimized={true}
               priority={true}
             />
@@ -55,11 +55,11 @@ export default function Home() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655664737/Nils%20Georg/general/about-profile-img_z38xiz.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656327642/Nils%20Georg/general/NG_smiling_compressed_zgrgkh.jpg"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
-              objectPosition="top"
+              objectPosition="100% 12%"
               unoptimized={true}
               priority={true}
             />
