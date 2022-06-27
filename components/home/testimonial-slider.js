@@ -36,6 +36,7 @@ export default function TestimonialSlider() {
         <Carousel
           infiniteLoop
           autoPlay
+          showThumbs={false}
           interval="6000"
           transitionTime="1000"
           useKeyboardArrows

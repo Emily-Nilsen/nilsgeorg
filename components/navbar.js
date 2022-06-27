@@ -22,28 +22,28 @@ const Navbar = () => {
         <div className="flex gap-3 sm:gap-8">
           {asPath === '/' ? null : (
             <Link href="/" passHref>
-              <p className="text-xs uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
+              <p className="text-xs font-normal tracking-wide uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
                 {t('common:hjem')}
               </p>
             </Link>
           )}
           {asPath.includes('/nyheter') ? null : (
             <Link href="/nyheter" passHref>
-              <p className="text-xs uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
+              <p className="text-xs font-normal tracking-wide uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
                 {t('common:nyheter')}
               </p>
             </Link>
           )}
           {asPath.includes('/tjenester') ? null : (
             <Link href="/tjenester" passHref>
-              <p className="text-xs uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
+              <p className="text-xs font-normal tracking-wide uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
                 {t('common:tjenester')}
               </p>
             </Link>
           )}
           {asPath.includes('/kontakt') ? null : (
             <Link href="/kontakt" passHref>
-              <p className="text-xs uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
+              <p className="text-xs font-normal tracking-wide uppercase transition duration-300 ease-in-out text-zinc-400 hover:text-white sm:text-sm">
                 {t('common:kontakt')}
               </p>
             </Link>
