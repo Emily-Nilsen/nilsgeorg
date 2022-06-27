@@ -35,8 +35,8 @@ export default function Bio() {
                   >
                     <Image
                       className="rounded-lg"
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656168565/Nils%20Georg/general/Nils_Georg_Nilsen_-_headshot_color_agxe5e.jpg"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656320467/Nils%20Georg/general/NG_compressed_mif4dm.jpg"
+                      alt="Tenor Nils Georg Nilsen"
                       width={1184}
                       height={987}
                       unoptimized={true}
