@@ -46,7 +46,7 @@ export default function NilsGeorg() {
               </div>
             </div>
           </motion.div>
-          <motion.div className="absolute bottom-0 right-0 z-20 flex items-center justify-start w-1/3 h-full text-white rounded-none bg-slate-800">
+          <motion.div className="absolute bottom-0 right-0 z-20 flex items-center justify-start w-1/3 h-full text-white rounded-none bg-t">
             {/* White square */}
             <motion.div
               animate={{ x: 0 }}
@@ -70,7 +70,7 @@ export default function NilsGeorg() {
               type: 'spring',
               ease: 'easeOut',
             }}
-            className="z-10 rounded-full absolute flex items-center justify-center w-[33vw] h-[33vw] bg-slate-800 overflow-hidden border border-white right-[16.5vw] top-1/2 -translate-y-1/2"
+            className="z-10 rounded-full absolute flex items-center justify-center w-[33vw] h-[33vw] bg-t overflow-hidden border border-white right-[16.5vw] top-1/2 -translate-y-1/2"
           ></motion.div>
           {/* NG round image */}
           <motion.div

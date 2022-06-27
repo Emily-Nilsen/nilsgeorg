@@ -21,7 +21,8 @@ export default function Home() {
       keywords={t('layout:hjem_keywords')}
     >
       <header className="relative h-screen bg-slate-800">
-        <div className="absolute inset-0">
+        {/* Small screens */}
+        <div className="absolute inset-0 lg:hidden">
           <motion.div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
@@ -32,7 +33,29 @@ export default function Home() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655870844/Nils%20Georg/general/Nils_Georg_Nilsen_-_headshot_black_and_white_xnnggs.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655664737/Nils%20Georg/general/about-profile-img_z38xiz.jpg"
+              alt="Nils Georg Nilsen | Tenor"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="30% 50%"
+              unoptimized={true}
+              priority={true}
+            />
+          </motion.div>
+        </div>
+        {/* Large screens */}
+        <div className="absolute inset-0 hidden lg:block">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+            }}
+            className="object-cover w-full h-full"
+          >
+            <Image
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655664737/Nils%20Georg/general/about-profile-img_z38xiz.jpg"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
@@ -42,30 +65,6 @@ export default function Home() {
             />
           </motion.div>
         </div>
-        {/* Colour photo */}
-        {/* <div className="absolute inset-0">
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            transition={{
-              delay: 1.5,
-              duration: 1.5,
-              type: 'fade',
-              ease: 'easeIn',
-            }}
-            className="object-cover w-full h-full"
-          >
-            <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656168565/Nils%20Georg/general/Nils_Georg_Nilsen_-_headshot_color_agxe5e.jpg"
-              alt="Nils Georg Nilsen | Tenor"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="top"
-              unoptimized={true}
-              priority={true}
-            />
-          </motion.div>
-        </div> */}
 
         <div className="absolute inset-0 flex items-center p-6 sm:p-20 lg:items-center">
           <div className="flex flex-col pb-0">
