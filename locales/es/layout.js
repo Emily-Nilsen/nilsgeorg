@@ -12,7 +12,7 @@ const layout = {
   // Tjenester
   tjenester_title: `Profesor de voz Nils Nilsen ofrece clases particulares y masterclasses en Málaga, España`,
   tjenester_description: `En la prestigiosa Academia Internacional Galamian de música clásica de Málaga, recibirás una formación de primer nivel, diseñada específicamente para prepararte para una exitosa carrera como intérprete.`,
-  tjenester_keywords: `AIG, Galamian, Academia Internacional Galamian, Oslo, Noruega, Málaga, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, profesor de canto, lecciones privadas, instrucción profesional, aprender ópera, aprender a cantar`,
+  tjenester_keywords: `AIG, Galamian, Academia Internacional Galamian, Oslo, Noruega, Málaga, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, profesor de canto, lecciones privadas, instrucción profesional, aprender ópera, aprender a cantar, servicios`,
 
   // Kontakt
   kontakt_title: `Datos de contacto del profesor de voz y tenor Nils Nilsen, Málaga, España`,

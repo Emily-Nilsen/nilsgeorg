@@ -1,7 +1,7 @@
 const common = {
   hjem: `Inicio`,
   nyheter: `Noticias`,
-  tjenester: `Servicios`,
+  tjenester: `Clases`,
   kontakt: `Contactar`,
 };
 

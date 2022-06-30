@@ -1,5 +1,5 @@
 const services = {
-  tjenester: `Tjenester`,
+  tjenester: `Booking`,
   title: `Private eventer og sangtimer`,
   subtitle: `Tenor Nils Georg Nilsen er tilgjengelig for private forestillinger og sangtimer.`,
   title_booking: `Tilgjengelig for booking`,

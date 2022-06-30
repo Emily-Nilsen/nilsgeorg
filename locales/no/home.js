@@ -1,7 +1,7 @@
 const home = {
   // Features
-  features_title: `Linker til nyheter, tjenester og kontaktdetaljer`,
-  features_text: `Oversikt over Nils Georgs planlagte konserter, eventer og festivaler, tjenester som tilbys og kontaktdetaljer.`,
+  features_title: `Linker til nyheter, booking og kontaktdetaljer`,
+  features_text: `Oversikt over Nils Georgs planlagte konserter, eventer og festivaler, booking som tilbys og kontaktdetaljer.`,
 
   photo_by: `Foto av Ingrid Halvorsen`,
 

@@ -12,7 +12,7 @@ const layout = {
   // Tjenester
   tjenester_title: `Freelance classical singer Nils Nilsen in Oslo, Norway`,
   tjenester_description: `Nils Georg Nilsen is a professional tenor, highly experienced, and classically trained, with a soaring high tenor voice and an expansive repertoire.`,
-  tjenester_keywords: `weddings, funerals, parties, birthday parties, corporate events, special occasions, classical singer, Oslo, Norway, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, male singer, male vocalist, private singing lessons, lyrical techniques, private tutor, Málaga, Galamian International Academy, available for booking, available for hire`,
+  tjenester_keywords: `weddings, funerals, parties, birthday parties, corporate events, special occasions, classical singer, Oslo, Norway, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, male singer, male vocalist, private singing lessons, lyrical techniques, private tutor, Málaga, Galamian International Academy, available for booking, available for hire, services`,
 
   // Kontakt
   kontakt_title: `Contact details for classical singer Nils Nilsen`,

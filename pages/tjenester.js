@@ -45,16 +45,16 @@ export default function Tjenester() {
         </div>
       </header>
 
-      <div className="py-16 overflow-hidden bg-white lg:py-24">
+      <div className="pb-16 overflow-hidden bg-white lg:pb-24">
         <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="relative">
+          {/* <div className="relative">
             <h1 className="text-3xl font-extrabold leading-8 tracking-tight text-center text-slate-900 sm:text-4xl">
               {t('services:title')}
             </h1>
             <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-slate-500">
               {t('services:subtitle')}
             </p>
-          </div>
+          </div> */}
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">

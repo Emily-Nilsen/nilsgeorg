@@ -1,7 +1,7 @@
 const footer = {
   hjem: `Home`,
   nyheter: `News`,
-  tjenester: `Services`,
+  tjenester: `Booking`,
   kontakt: `Contact`,
 };
 

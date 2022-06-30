@@ -10,9 +10,9 @@ const layout = {
   nyheter_keywords: `Nordic Tenors, Nordic Tenors Classics, Christmas with Nordic Tenors, Oslo, Malaga, Málaga Clásica, Ålesund, Drammen, Asker, Tromsø, Lillehammer, Trondheim, Bergen, Kristiansand, Moss, Bodø, Bærum, Sandvika`,
 
   // Tjenester
-  tjenester_title: `Freelance tenor Nils Nilsen tilgjengelig for oppdrag i Oslo, Norge`,
+  tjenester_title: `Freelance tenor Nils Nilsen er tilgjengelig for oppdrag i Oslo, Norge`,
   tjenester_description: `Nils Georg Haugland Nilsen er en profesjonell tenor, meget erfaren og klassisk trent, med en fyldig tenorstemme og et omfattende repertoar.`,
-  tjenester_keywords: `bryllup, begravelser, fest, bursdagsfest, bedrift, private arrangementer, klassisk sanger, Oslo, Norge, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, sanger, vokalist, opera sanger, booking, private sangtimer, tilgjengelig, Málaga`,
+  tjenester_keywords: `bryllup, begravelser, fest, bursdagsfest, bedrift, private arrangementer, klassisk sanger, Oslo, Norge, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, sanger, vokalist, opera sanger, booking, private sangtimer, tilgjengelig, Málaga, tjenester`,
 
   // Kontakt
   kontakt_title: `Kontaktinformasjon for tenor Nils Georg Haugland Nilsen, Oslo, Norge`,

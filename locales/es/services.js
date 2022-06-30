@@ -1,5 +1,5 @@
 const services = {
-  tjenester: `Servicios`,
+  tjenester: `Clases`,
   title: `Eventos privados y clases de canto`,
   subtitle: `Tenor Nils Georg Nilsen está disponible para arreglos privados y lecciones de canto.`,
   title_booking: `Disponible para reservar`,
