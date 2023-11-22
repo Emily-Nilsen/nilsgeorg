@@ -1,0 +1,11 @@
+{
+  "locales": ["en", "es", "no"],
+  "defaultLocale": "no",
+  "pages": {
+    "*": ["common", "footer", "layout"],
+    "/": ["home"],
+    "/kontakt": ["contact"],
+    "/nyheter": ["news"],
+    "/tjenester": ["services"]
+  }
+}
