@@ -3,6 +3,7 @@ const footer = {
   nyheter: `Nyheter`,
   tjenester: `Booking`,
   kontakt: `Kontakt`,
+  utviklet: `Utviklet av`,
 };
 
 export default footer;

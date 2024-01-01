@@ -80,84 +80,21 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-base text-center text-gray-400">
-          © {new Date().getFullYear()} Nils Nilsen | Tenor
+          © {new Date().getFullYear()} Nils Nilsen | Tenor.{' '}
+          <span>
+            {t('footer:utviklet')}{' '}
+            <a
+              href="https://norsknett.no"
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer hover:underline"
+            >
+              Norsk Nett
+            </a>
+            .
+          </span>
         </p>
       </div>
     </footer>
-    // Footer with subscription prompt
-    // <footer className="bg-slate-800" aria-labelledby="footer-heading">
-    //   <h2 id="footer-heading" className="sr-only">
-    //     Footer
-    //   </h2>
-    //   <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-    //     <div className="sm:grid sm:grid-cols-2 sm:gap-8 sm:grid-rows-1">
-    //       {/* Subscribe */}
-    //       <div className="mt-8 sm:mt-0 xl:mt-0 sm:col-start-1 sm:col-span-1 sm:row-span-1">
-    //         <h4 className="text-xl font-semibold tracking-tight text-blue-200 sm:text-2xl">
-    //           Win free tickets!
-    //         </h4>
-    //         <p className="mt-4 text-base text-slate-300">
-    //           The latest news, articles, and resources, sent to your inbox
-    //           weekly.
-    //         </p>
-    //         <form className="mt-4 sm:flex sm:max-w-md">
-    //           <label htmlFor="email-address" className="sr-only">
-    //             Email address
-    //           </label>
-    //           <input
-    //             type="email"
-    //             name="email-address"
-    //             id="email-address"
-    //             autoComplete="email"
-    //             required
-    //             className="w-full min-w-0 px-4 py-2 text-base bg-white border border-transparent rounded-md appearance-none text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white focus:border-white focus:placeholder-slate-400"
-    //             placeholder="Enter your email"
-    //           />
-    //           <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-    //             <button
-    //               type="submit"
-    //               className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-blue-500"
-    //             >
-    //               Subscribe
-    //             </button>
-    //           </div>
-    //         </form>
-    //       </div>
-    //       <nav
-    //         className="flex flex-wrap justify-between pt-8 -mx-5 -my-2 sm:justify-end sm:col-start-2 sm:col-span-1 sm:row-span-1 sm:pt-0"
-    //         aria-label="Footer"
-    //       >
-    //         {navigation.main.map((item) => (
-    //           <div key={item.name} className="px-5 py-2">
-    //             <Link href={item.href} passHref>
-    //               <a className="text-base transition duration-300 ease-in-out text-slate-300 hover:text-white">
-    //                 {item.name}
-    //               </a>
-    //             </Link>
-    //           </div>
-    //         ))}
-    //       </nav>
-    //     </div>
-    //     <div className="pt-8 mt-8 border-t border-slate-700 md:flex md:items-center md:justify-between">
-    //       <div className="flex space-x-6 md:order-2">
-    //         {navigation.social.map((item) => (
-    //           <a
-    //             key={item.name}
-    //             href={item.href}
-    //             target="_blank"
-    //             rel="noreferrer"
-    //             className="transition duration-300 ease-in-out text-slate-400 hover:text-slate-300"
-    //           >
-    //             <span className="sr-only">{item.name}</span>
-    //             <item.icon className="w-6 h-6" aria-hidden="true" />
-    //           </a>
-    //         ))}
-    //       </div>
-    //       <p className="mt-8 text-base text-slate-400 md:mt-0 md:order-1">
-    //         © {new Date().getFullYear()} Nils Nilsen | Tenor
-    //       </p>
-    //     </div>
-    //   </div>
-    // </footer>
   );
 }
