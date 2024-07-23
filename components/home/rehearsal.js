@@ -16,10 +16,7 @@ export default function Rehearsal() {
               </span>
             </h3>{' '}
           </figcaption>
-          <audio
-            controls
-            src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1655721346/Nils%20Georg/media/rehearsal_gxxbew.mp3"
-          >
+          <audio controls src="/audio/rehearsal.mp3">
             Your browser does not support the
             <code>audio</code> element.
           </audio>

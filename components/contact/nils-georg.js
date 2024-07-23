@@ -85,7 +85,7 @@ export default function NilsGeorg() {
             className="z-30 rounded-full absolute flex items-center justify-center w-[29vw] h-[29vw] bg-t overflow-hidden top-1/2 -translate-y-1/2 right-[18.5vw]"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655731169/Nils%20Georg/general/NG_circle_roiesa.png"
+              src="/images/circle.webp"
               alt="Nils Georg Nilsen Tenor"
               layout="fill"
               objectFit="cover"

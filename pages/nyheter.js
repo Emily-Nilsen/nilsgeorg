@@ -103,7 +103,7 @@ export default function Nyheter() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655788429/Nils%20Georg/general/Oslo_at_night_bkh3z1.webp"
+              src="/images/oslo.webp"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"

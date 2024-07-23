@@ -25,7 +25,7 @@ export default function Tjenester() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655798071/Nils%20Georg/general/Oslo_at_night_2_ebe1vq.webp"
+              src="/images/oslo_at_night.webp"
               alt="Oslo city at night"
               layout="fill"
               objectFit="cover"
@@ -93,7 +93,7 @@ export default function Tjenester() {
                     objectPosition="center"
                     width={360}
                     height={300}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655798574/Nils%20Georg/general/NG_sitting_zikdoj.webp"
+                    src="/images/sitting.webp"
                     alt="Tenor Nils Georg Nilsen"
                     unoptimized={true}
                   />
@@ -139,7 +139,7 @@ export default function Tjenester() {
                       objectPosition="center"
                       width={360}
                       height={300}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653712772/Galamian/voice/voice-photo-img-05_acbsra.webp"
+                      src="/images/voice.webp"
                       alt="Tenor Nils Georg Nilsen"
                       unoptimized={true}
                     />

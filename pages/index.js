@@ -33,7 +33,7 @@ export default function Home() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656571307/Nils%20Georg/general/NG-smiling_ltvhnz.webp"
+              src="/images/smiling.webp"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"
@@ -55,7 +55,7 @@ export default function Home() {
             className="object-cover w-full h-full"
           >
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656571307/Nils%20Georg/general/NG-smiling_ltvhnz.webp"
+              src="/images/smiling.webp"
               alt="Nils Georg Nilsen | Tenor"
               layout="fill"
               objectFit="cover"

@@ -10,10 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="no">
         <Head>
-          <link
-            rel="icon"
-            href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1700653921/Nils%20Georg/SVGs/ng-favicon_xpzx2i.svg"
-          />
+          <link rel="icon" href="/images/ng-favicon.svg" />
           <link
             rel="stylesheet"
             href="https://use.typekit.net/umy7pxl.css"

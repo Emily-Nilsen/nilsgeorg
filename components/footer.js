@@ -80,8 +80,8 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-base text-center text-gray-400">
-          © {new Date().getFullYear()} Nils Nilsen | Tenor.{' '}
-          <span>
+          © {new Date().getFullYear()} Nils Nilsen | Tenor{' '}
+          {/* <span>
             {t('footer:utviklet')}{' '}
             <a
               href="https://norsknett.no"
@@ -92,7 +92,7 @@ export default function Footer() {
               Norsk Nett
             </a>
             .
-          </span>
+          </span> */}
         </p>
       </div>
     </footer>

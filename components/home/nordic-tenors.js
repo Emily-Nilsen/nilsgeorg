@@ -22,7 +22,7 @@ export default function NordicTenors() {
           <div className="absolute inset-0">
             <div className="relative object-cover object-center w-full h-full">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1655789400/Nils%20Georg/general/nordic_tenors_singing_imoral.webp"
+                src="/images/nordic_tenors.webp"
                 alt="Nordic Tenors"
                 layout="fill"
                 objectFit="cover"

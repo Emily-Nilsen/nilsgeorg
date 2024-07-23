@@ -35,7 +35,7 @@ export default function Bio() {
                   >
                     <Image
                       className="rounded-lg"
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1656320467/Nils%20Georg/general/NG_compressed_mif4dm.jpg"
+                      src="/images/singing.webp"
                       alt="Tenor Nils Georg Nilsen"
                       width={1184}
                       height={987}

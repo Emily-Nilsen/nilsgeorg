@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 z-30 flex justify-between w-full p-6 sm:px-20">
       <Link href="/" passHref className="z-50 cursor-pointer hover:scale-105">
         <Image
-          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1700654216/Nils%20Georg/SVGs/nilsgeorg-light_n0azso.svg"
+          src="/images/logo-long-white.svg"
           alt="Nils Georg logo"
           width={150}
           height={50}
