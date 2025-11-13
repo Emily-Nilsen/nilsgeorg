@@ -5,6 +5,7 @@
     "*": ["common", "footer", "layout"],
     "/": ["home"],
     "/kontakt": ["contact"],
+    "/success": ["success"],
     "/nyheter": ["news"],
     "/tjenester": ["services"]
   }

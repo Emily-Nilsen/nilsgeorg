@@ -2,11 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import NilsGeorg from '../components/contact/nils-georg';
 
 export default function Contact() {
   const { t } = useTranslation();
+  const { locale, defaultLocale } = useRouter();
+  const successPath =
+    locale === defaultLocale ? '/success' : `/${locale}/success`;
 
   return (
     <Layout
@@ -73,10 +77,12 @@ export default function Contact() {
           <div className="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
             <div className="max-w-lg mx-auto lg:max-w-none">
               <form
-                action="#"
+                // action="#"
+                action={successPath}
                 subject="Ta kontakt med Nils Nilsen"
                 name="Nils Nilsen - Ta Kontakt"
                 data-netlify="true"
+                method="POST"
                 className="grid grid-cols-1 gap-y-6"
               >
                 <input

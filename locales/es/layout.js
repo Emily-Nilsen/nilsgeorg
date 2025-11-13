@@ -18,6 +18,11 @@ const layout = {
   kontakt_title: `Datos de contacto del profesor de voz y tenor Nils Nilsen, Málaga, España`,
   kontakt_description: `Para más información detallada, relativa a horarios, clases personalizadas etc. Contacte con el profesor Nils Nilsen a través de correo electrónico, teléfono o rellene el formulario de contacto.`,
   kontakt_keywords: `tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, cómo contactar, contactarnos, formulario de contacto, teléfono, email, ponerse en contacto, datos de contacto`,
+
+  // Success
+  success_title: `Gracias por contactar con Nils Nilsen`,
+  success_description: `Confirmación de que tu mensaje para el tenor Nils Georg Nilsen se ha recibido correctamente.`,
+  success_keywords: `gracias, confirmación, mensaje enviado, formulario de contacto, cantante clásico, Oslo, Noruega`,
 };
 
 export default layout;

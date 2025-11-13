@@ -18,6 +18,11 @@ const layout = {
   kontakt_title: `Kontaktinformasjon for tenor Nils Georg Haugland Nilsen, Oslo, Norge`,
   kontakt_description: `Ta kontakt med klassisk sanger Nils Nilsen vedrørende ditt neste arrangement via e-post, telefon eller ved å fylle ut kontaktskjemaet.`,
   kontakt_keywords: `kontakt oss, telefon, e-post, kontaktskjema, kontaktinformasjontenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, Oslo, Norge, operasanger, sanger, sangtimer, private sangtimer, booking, Málaga, Galamian International Academy`,
+
+  // Success
+  success_title: `Takk for at du tok kontakt med Nils Nilsen`,
+  success_description: `Bekreftelse på at meldingen din til tenor Nils Georg Nilsen er mottatt.`,
+  success_keywords: `takk, bekreftelse, melding sendt, kontaktskjema, klassisk sanger, Oslo, Norge`,
 };
 
 export default layout;

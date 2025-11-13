@@ -18,6 +18,11 @@ const layout = {
   kontakt_title: `Contact details for classical singer Nils Nilsen`,
   kontakt_description: `Get in touch with tenor Nils Georg Nilsen about your next event through email, telephone, or filling in the contact form.`,
   kontakt_keywords: `contact details, email, contact form, get in touch, booking, bookings, classical singer, Oslo, Norway, tenor, Nils Georg, Nils Georg Haugland Nilsen, Nils Georg Nilsen, male singer, male vocalist, opera singer`,
+
+  // Success
+  success_title: `Thank you for contacting Nils Nilsen`,
+  success_description: `Confirmation that your message to tenor Nils Georg Nilsen has been received successfully.`,
+  success_keywords: `thank you, confirmation, message sent, contact form, classical singer, Oslo, Norway`,
 };
 
 export default layout;
