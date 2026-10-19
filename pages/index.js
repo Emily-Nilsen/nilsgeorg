@@ -8,6 +8,7 @@ import { MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
 import Features from '../components/home/features';
 import Bio from '../components/home/bio';
+import ScriptTitle from '../components/script-title';
 import NordicTenors from '../components/home/nordic-tenors';
 import TestimonialSlider from '../components/home/testimonial-slider';
 
@@ -69,7 +70,7 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center p-6 sm:p-20 lg:items-center">
           <div className="flex flex-col pb-0">
             <h2 className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl">
-              Tenor
+              <ScriptTitle text="Tenor" />
             </h2>
             <p className="py-6 text-5xl font-medium tracking-normal text-white uppercase sm:text-7xl lg:text-8xl">
               Nils

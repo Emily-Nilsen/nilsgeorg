@@ -6,7 +6,13 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        // 65ch as it measured in Futura PT (0.548em per ch), so the bio
+        // column keeps its width with Jost, whose digits are narrower.
+        prose: '35.62em',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),

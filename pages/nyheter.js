@@ -7,6 +7,7 @@ import { LinkIcon, MailIcon, CalendarIcon } from '@heroicons/react/solid';
 import useTranslation from 'next-translate/useTranslation';
 import Pagination from '../components/news/pagination';
 import { motion } from 'framer-motion';
+import ScriptTitle from '../components/script-title';
 
 export default function Nyheter() {
   const { t } = useTranslation();
@@ -117,7 +118,7 @@ export default function Nyheter() {
         <div className="absolute inset-0 flex items-end p-6 sm:p-20 lg:items-center">
           <div className="flex flex-col lg:pb-0 pb-[12vh]">
             <h2 className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl">
-              {t('news:news')}
+              <ScriptTitle text={t('news:news')} />
             </h2>
           </div>
         </div>

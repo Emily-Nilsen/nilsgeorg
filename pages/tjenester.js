@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from '../components/layout';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
+import ScriptTitle from '../components/script-title';
 
 export default function Tjenester() {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ export default function Tjenester() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="flex pb-[12vh]">
             <h2 className="text-5xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-8xl">
-              {t('services:tjenester')}
+              <ScriptTitle text={t('services:tjenester')} />
             </h2>
           </div>
         </div>

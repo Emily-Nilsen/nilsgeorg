@@ -11,10 +11,6 @@ class MyDocument extends Document {
       <Html lang="no">
         <Head>
           <link rel="icon" href="/images/ng-favicon.svg" />
-          <link
-            rel="stylesheet"
-            href="https://use.typekit.net/umy7pxl.css"
-          ></link>
         </Head>
         <body>
           <Main />

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
+import ScriptTitle from '../script-title';
 
 export default function NilsGeorg() {
   const { t } = useTranslation();
@@ -26,7 +27,7 @@ export default function NilsGeorg() {
                     }}
                     className="text-4xl font-medium leading-5 text-blue-200 sm:text-6xl lg:text-7xl"
                   >
-                    {t('contact:kontakt')}
+                    <ScriptTitle text={t('contact:kontakt')} />
                   </motion.h2>
                   <motion.p
                     animate={{ opacity: 1 }}
